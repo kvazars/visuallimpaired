@@ -11,13 +11,8 @@ $( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src
 }});
 
 if ($.cookie('openspec')=='1')
-{
-    $( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src='specver/spec.html'></iframe>" );
-}
-else
-{
-$.cookie('openspec','0');
-}
+$( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src='specver/spec.html'></iframe>" );
+
 
 
 
