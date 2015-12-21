@@ -1,12 +1,22 @@
 $(document).ready(function(){ 
 
 function xed(){
+if ($.cookie('fontSize') )
 parent.$("body *").css("fontSize", $.cookie('fontSize'));
-parent.$("body *").css("background", $.cookie('background-color'));
-parent.$("body *" ).css("color", $.cookie('color'));
+if ($.cookie('background') )
+parent.$("body *").css("background", $.cookie('background'))
+else
+parent.$("body *").css("background", "#fff");
+if ($.cookie('color') )
+parent.$("body *" ).css("color", $.cookie('color'))
+else
+parent.$("body *").css("color", "#000");
+if ($.cookie('letter-spacing') )
 parent.$("body *").css("letter-spacing", $.cookie('letter-spacing'));
-parent.$("body *").css("fontSize", $.cookie('fontSize'));
-
+if ($.cookie('img-color') )
+parent.$("img").css("-webkit-filter", $.cookie('img-color'))
+else
+parent.$("img").css("-webkit-filter", "grayscale(100%)");
 }
 xed();
 
@@ -56,38 +66,46 @@ $("#c1").click(function()
 {
 parent.$("body *").css("background", "#fff");
 parent.$("body *").css("color", "#000");
-
-$.cookie('background-color',"#fff");
+parent.$("img").css("-webkit-filter", "grayscale(100%)");
+$.cookie('background',"#fff");
 $.cookie('color',"#000");
-
+$.cookie('img-color',"grayscale(100%)");
 })
 $("#c2").click(function()
 {
 parent.$("body *").css("background", "#000");
 parent.$("body *").css("color", "#fff");
-$.cookie('background-color',"#000");
+parent.$("img").css("-webkit-filter", "grayscale(1)");
+$.cookie('background',"#000");
 $.cookie('color',"#fff");
+$.cookie('img-color',"grayscale(1)");
 })
 $("#c3").click(function()
 {
 parent.$("body *").css("background", "#6699FF");
 parent.$("body *").css("color", "#000");
-$.cookie('background-color',"#6699FF");
+parent.$("img").css("-webkit-filter", "grayscale(100%)");
+$.cookie('background',"#6699FF");
 $.cookie('color',"#000");
+$.cookie('img-color',"grayscale(100%)");
 })
 $("#c4").click(function()
 {
 parent.$("body *").css("background", "#f7f3d6");
 parent.$("body *").css("color", "#4d4b43");
-$.cookie('background-color',"#f7f3d6");
+parent.$("img").css("-webkit-filter", "sepia(100%)");
+$.cookie('background',"#f7f3d6");
 $.cookie('color',"#4d4b43");
+$.cookie('img-color',"sepia(100%)");
 })
 $("#c5").click(function()
 {
 parent.$("body *").css("background", "#3b2716");
 parent.$("body *").css("color", "#a9e44d");
-$.cookie('background-color',"#3b2716");
+parent.$("img").css("-webkit-filter", "hue-rotate(240deg)");
+$.cookie('background',"#3b2716");
 $.cookie('color',"#a9e44d");
+$.cookie('img-color',"hue-rotate(240deg)");
 })
 
 
@@ -105,6 +123,7 @@ else
 }
 
 })
+
 
 
 $("#i1").click(function()
@@ -140,9 +159,10 @@ $('.reload').click(function (e) {
   $.cookie('letter-spacing','');
   $.cookie('img','');
   $.cookie('color','');
-  $.cookie('background-color','');
+  $.cookie('background','');
   $.cookie('fontSize','');
-parent.$.cookie('openspec','');
+  $.cookie('img-color','');
+parent.$.cookie('openspec','0');
 
 
 xed();
