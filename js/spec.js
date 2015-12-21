@@ -5,8 +5,6 @@ parent.$("body *").css("fontSize", $.cookie('fontSize'));
 parent.$("body *").css("background", $.cookie('background-color'));
 parent.$("body *" ).css("color", $.cookie('color'));
 parent.$("body *").css("letter-spacing", $.cookie('letter-spacing'));
-parent.$("body *").css("font-family", $.cookie('font-family'));
-if ($.cookie('font-family')) $('#sel option[value="'+$.cookie('font-family')+'"]').attr('selected', 'selected');
 parent.$("body *").css("fontSize", $.cookie('fontSize'));
 
 }
@@ -109,14 +107,6 @@ else
 })
 
 
-$("#sel").change(function()
-{
-var sel = $("#sel option:selected").val();
-parent.$("body *").css("font-family", $(this).val());
-$.cookie('font-family',$(this).val());
-
-
-})
 $("#i1").click(function()
 {
 parent.$("body *").css("letter-spacing", "+=1");
@@ -148,7 +138,6 @@ $.cookie('inter','2');
 $('.reload').click(function (e) {
   $.cookie('inter','');
   $.cookie('letter-spacing','');
-  $.cookie('font-family','');
   $.cookie('img','');
   $.cookie('color','');
   $.cookie('background-color','');
