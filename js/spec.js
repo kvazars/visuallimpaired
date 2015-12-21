@@ -83,10 +83,10 @@ $.cookie('img-color',"grayscale(1)");
 $("#c3").click(function()
 {
 parent.$("body *").css("background", "#6699FF");
-parent.$("body *").css("color", "#000");
+parent.$("body *").css("color", "#fff");
 parent.$("img").css("-webkit-filter", "grayscale(100%)");
 $.cookie('background',"#6699FF");
-$.cookie('color',"#000");
+$.cookie('color',"#fff");
 $.cookie('img-color',"grayscale(100%)");
 })
 $("#c4").click(function()
