@@ -1,6 +1,6 @@
 $(document).ready(function(){ 
 
-function xed(){
+function loadstyle(){
 if ($.cookie('fontSize') )
 parent.$("body *").css("fontSize", $.cookie('fontSize'));
 if ($.cookie('background') )
@@ -17,9 +17,9 @@ if ($.cookie('img-color') )
 parent.$("img").css("-webkit-filter", $.cookie('img-color'))
 else
 parent.$("img").css("-webkit-filter", "grayscale(100%)");
-}
-xed();
 
+}
+loadstyle();
 
 
 
@@ -51,6 +51,7 @@ parent.$("body *").css("line-height", "1");
 
 $("#a1").click(function()
 {
+
 parent.$('body *').css("fontSize", "+=2");
 
 $.cookie('fontSize',parent.$("body *").css("fontSize"));
@@ -154,20 +155,5 @@ $.cookie('inter','2');
 })
 
 
-$('.reload').click(function (e) {
-  $.cookie('inter','');
-  $.cookie('letter-spacing','');
-  $.cookie('img','');
-  $.cookie('color','');
-  $.cookie('background','');
-  $.cookie('fontSize','');
-  $.cookie('img-color','');
-parent.$.cookie('openspec','0');
-
-
-xed();
-parent.location.reload();
-
-});
 
 })
