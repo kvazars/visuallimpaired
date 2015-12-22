@@ -9,7 +9,7 @@ $('.spec').click(function (e) {
 
 if (!$.cookie('openspec'))
 {
-$.cookie('openspec',1);
+$.cookie('openspec',1, { path: '/' });
 $("body *").css("background", "#fff");
 $("body *").css("color", "#000");
 $("img").css("-webkit-filter", "grayscale(100%)");
