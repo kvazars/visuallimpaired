@@ -1,7 +1,7 @@
 # visuallimpaired
-Version Site for visuall impaired
+## Version Site for visuall impaired
 
-Версия сайта для слабовидящих. Добавляем любому сайту поддержку для слабовидящих.
+###Версия сайта для слабовидящих. Добавляем любому сайту поддержку для слабовидящих.
 
 **Installation**:
 1. Copy file root folder (Складываем папку specver в корень сайта)
