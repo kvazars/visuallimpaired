@@ -4,7 +4,6 @@
 ###Версия сайта для слабовидящих. Добавляем любому сайту поддержку для слабовидящих.
 
 ####Installation: 
-===================
 1. Copy file root folder (Складываем папку specver в корень сайта)
 2. Added library (подключаем библиотеки)
 ```
@@ -19,7 +18,6 @@
 3.Added class for button (На кнопку добавляем стиль): *class="spec"*
 
 ####Structure folders and files:
-===================
 ```
 specver/
 ├── css/
