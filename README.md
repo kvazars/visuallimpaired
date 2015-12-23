@@ -18,4 +18,24 @@
 ```
 3.Added class for button (На кнопку добавляем стиль): *class="spec"*
 
-
+####Structure folders and files:
+===================
+```
+specver/
+├── css/
+│   ├─── bootstrap.min.css
+│   └─── style.css
+├── fonts/
+│   ├─── glyphicons-halflings-regular.eot
+│   ├─── glyphicons-halflings-regular.svg
+│   ├─── glyphicons-halflings-regular.ttf
+│   ├─── glyphicons-halflings-regular.woff
+│   └─── glyphicons-halflings-regular.woff2
+├── js/
+│   ├─── jquery-2.1.3.min.js
+│   ├─── jquery.cookie.js
+│   ├─── spec.js
+│   └─── specver.js
+├── README.md
+└── spec.html 
+```
