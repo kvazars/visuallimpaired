@@ -1,6 +1,7 @@
 $(document).ready(function(){ 
 
 function loadstyle(){
+ 
 if ($.cookie('fontSize') )
 parent.$("body *").css("fontSize", $.cookie('fontSize'));
 if ($.cookie('background') )
@@ -161,9 +162,9 @@ $("#reset").click(function()
    $.cookie('letter-spacing','');
 -  $.cookie('font-family','');
    $.cookie('img','');
+   $.cookie('img-color','');
    $.cookie('color','');
-   $.cookie('background-color','');
-   $.cookie('-webkit-filter','');
+   $.cookie('background','');
    parent.location.reload();
 })
 
