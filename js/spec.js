@@ -154,6 +154,17 @@ $.cookie('inter','2');
 
 })
 
-
+$("#reset").click(function()
+{
+   $.cookie('inter','');
+   $.cookie('fontSize','');
+   $.cookie('letter-spacing','');
+-  $.cookie('font-family','');
+   $.cookie('img','');
+   $.cookie('color','');
+   $.cookie('background-color','');
+   $.cookie('-webkit-filter','');
+   parent.location.reload();
+})
 
 })
