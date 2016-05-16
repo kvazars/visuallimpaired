@@ -130,12 +130,12 @@ else
 
 $("#i1").click(function()
 {
-parent.$("body *").css("letter-spacing", "+=1");
+parent.$("body *").css("letter-spacing", "+=0.1em");
 $.cookie('letter-spacing',parent.$("body *").css("letter-spacing"));
 })
 $("#i2").click(function()
 {
-parent.$("body *").css("letter-spacing", "-=1");
+parent.$("body *").css("letter-spacing", "-=0.1em");
 $.cookie('letter-spacing',parent.$("body *").css("letter-spacing"));
 })
 
